@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "ВместЕ",
+    "slug": "vmeste-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Приложение использует вашу геопозицию для поиска ближайших медицинских центров и аптек.",
+        "NSPhotoLibraryUsageDescription": "Доступ к фото для прикрепления изображений к записям дневника.",
+        "NSMicrophoneUsageDescription": "Микрофон используется для записи коротких аудиозаметок.",
+        "NSCameraUsageDescription": "Камера используется для фото и видео в дневнике.",
+        "NSCalendarsUsageDescription": "Доступ к календарю для планировщика напоминаний.",
+        "NSFaceIDUsageDescription": "Face ID используется для безопасного входа."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "VIBRATE",
+        "USE_BIOMETRIC"
+      ],
+      "package": "app.vmeste"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png"
+        }
+      ],
+      "expo-localization",
+      "expo-secure-store"
+    ],
+    "locales": {
+      "ru": "./assets/locales/ru.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
